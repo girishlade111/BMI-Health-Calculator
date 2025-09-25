@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Free & Accurate BMI Calculator</title>
+    <meta name="description" content="Learn about our modern, free, and easy-to-use health calculator for BMI, BMR, and daily calorie needs. We prioritize your privacy—no data saved.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .theme-toggle-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .prose {
+            max-width: 80ch;
+        }
+    </style>
+    <script>
+        // Set theme from localStorage or system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 transition-colors duration-300">
+
+    <!-- Main Container -->
+    <div class="min-h-screen container mx-auto px-4 py-8 md:py-12 flex flex-col">
+
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-8">
+            <a href="./index.html" class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-500 transition-colors">BMI & Health Calculator</a>
+            <div class="flex items-center space-x-4">
+                 <a href="./about.html" class="text-md font-medium text-blue-600 dark:text-blue-500 hover:underline">About Us</a>
+                <button id="theme-toggle" class="p-2 rounded-full text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-50 dark:focus:ring-offset-slate-900 focus:ring-blue-500">
+                    <svg id="theme-icon-light" class="h-6 w-6 theme-toggle-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    <svg id="theme-icon-dark" class="h-6 w-6 theme-toggle-icon hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow bg-white dark:bg-slate-800 p-6 md:p-10 rounded-2xl shadow-lg">
+            <article class="prose prose-slate dark:prose-invert lg:prose-lg mx-auto">
+                <h1>About Our Free & Accurate BMI Calculator</h1>
+                
+                <h2>Your Simple Path to Understanding Health Metrics</h2>
+                <p>Navigating your health and wellness journey can feel complex, filled with confusing numbers and advice. We believe that understanding your body's key metrics should be simple, accessible, and completely private. That's why we created this modern BMI Calculator—a free tool designed to give you a clear and instant snapshot of your health.</p>
+
+                <h2>What Makes Our Calculator Different?</h2>
+                <p>We didn't just want to build another BMI calculator. We wanted to create a better experience with features that matter.</p>
+                <ul>
+                    <li><strong>More Than Just a Number:</strong> While BMI is a useful starting point, it's not the whole story. Our calculator goes a step further by also providing your Basal Metabolic Rate (BMR) and your Total Daily Energy Expenditure (TDEE) to give you a more complete picture for your wellness goals.</li>
+                    <li><strong>Designed for You:</strong> Our calculator features a clean, intuitive, and mobile-friendly design. Get instant results as you type and switch seamlessly between metric and imperial units. This commitment to a seamless user experience is a core principle of the development work at <a href="https://ladestack.in" target="_blank" rel="noopener noreferrer">Ladestack</a>.</li>
+                    <li><strong>Absolute Privacy, Guaranteed:</strong> Your health data is yours alone. We do not store, share, or track any of the personal information you enter. Every calculation is performed on your device and is gone when you leave the page.</li>
+                </ul>
+
+                <h2>Our Mission</h2>
+                <p>Our mission is simple: to empower individuals with free, accurate, and easy-to-understand tools that help them take the first step towards a healthier lifestyle. We want to demystify health data and make it accessible to everyone, everywhere.</p>
+                
+                <h2>A Note on BMI</h2>
+                <p>Body Mass Index (BMI) is a widely used measure to determine if your weight is in a healthy range for your height. However, it's a general estimate and does not account for factors like body composition (muscle vs. fat), age, or ethnic background. This calculator should be used as a screening tool and not as a substitute for professional medical advice. Always consult with a healthcare provider for a comprehensive health assessment.</p>
+                
+                 <div class="text-center mt-10">
+                    <a href="./index.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 no-underline">
+                        Back to Calculator
+                    </a>
+                </div>
+            </article>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="text-center mt-12 py-6">
+            <div class="flex justify-center space-x-6 mb-6">
+                <!-- Social Media Links -->
+                <a href="https://www.instagram.com/girish_lade_/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.2,5.2 0 0,1 16.2,21.4H7.8C4.6,21.4 2,18.8 2,16.2V7.8A5.2,5.2 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/girish-lade-075bba201/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.43 12.9,11.2V10.13H10.13V18.5H12.9V13.57C12.9,12.8 13.5,12.17 14.31,12.17C15.12,12.17 15.76,12.8 15.76,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,6 7.88,5.31 7,5.31C6.12,5.31 5.44,6 5.44,6.88C5.44,7.77 6.12,8.56 7,8.56C7.88,8.56 8.56,7.77 8.56,6.88M8.27,18.5V10.13H5.5V18.5H8.27Z"></path></svg>
+                </a>
+                <a href="https://github.com/girishlade111" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
+                </a>
+                <a href="https://codepen.io/Girish-Lade-the-looper" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors">
+                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M15.2,16.5L12,18.2L8.8,16.5L2.3,12.9L12,7.5L21.7,12.9L15.2,16.5M12,2.3L2.3,7.6V18.2L12,23.5L21.7,18.2V7.6L12,2.3M12,12.5L15.2,10.8L18.4,12.5L12,16L5.6,12.5L8.8,10.8L12,12.5Z"></path></svg>
+                </a>
+                <a href="mailto:girishlade111@gmail.com" class="text-slate-400 hover:text-blue-500 transition-colors">
+                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"></path></svg>
+                </a>
+            </div>
+             <!-- Developer Credit Section -->
+            <div class="border-t border-slate-200 dark:border-slate-700 mt-8 pt-6 text-center text-sm">
+                <p class="text-slate-500 dark:text-slate-400">
+                    This tool was designed and developed with a focus on user experience and accuracy by
+                    <a href="https://ladestack.in" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-600 dark:text-blue-500 hover:underline">
+                        Ladestack
+                    </a>.
+                </p>
+                <p class="mt-2 text-slate-400 dark:text-slate-500">
+                    Looking for a professional, custom web application for your business?
+                    <a href="https://ladestack.in" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">
+                        Let's build something great together.
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- THEME TOGGLE ---
+            const themeToggle = document.getElementById('theme-toggle');
+            const lightIcon = document.getElementById('theme-icon-light');
+            const darkIcon = document.getElementById('theme-icon-dark');
+            
+            const toggleTheme = () => {
+                const isDark = document.documentElement.classList.toggle('dark');
+                localStorage.theme = isDark ? 'dark' : 'light';
+                updateThemeIcons(isDark);
+            };
+            
+            const updateThemeIcons = (isDark) => {
+                if (isDark) {
+                    lightIcon.classList.add('hidden');
+                    darkIcon.classList.remove('hidden');
+                } else {
+                    lightIcon.classList.remove('hidden');
+                    darkIcon.classList.add('hidden');
+                }
+            };
+            
+            themeToggle.addEventListener('click', toggleTheme);
+            updateThemeIcons(document.documentElement.classList.contains('dark'));
+        });
+    </script>
+</body>
+</html>
+
